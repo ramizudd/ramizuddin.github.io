@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://ramizudd.github.io
+title: Ramiz Uddin
+tagline: An obsessed observer of 'I'
+description: My awesome new site
+paginate: 5
