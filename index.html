@@ -1,37 +1,15 @@
----
-layout: default
-title: Home
----
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<!DOCTYPE html>
+<html>
+<body>
+  <section>
+    <h1>About Me</h1>
+    <p>
+      I am an AI researcher and student with over a decade of experience working alongside U.S. regulatory institutions across diverse industries, including Food & Beverages, OSHA, Healthcare, and Real Estate. My expertise lies in ensuring compliance at every stage of professional development, from crafting engaging and compliant courses to gathering essential, secure, and accurate information from workforce professionals. 
+    </p>
+    <p>
+      This comprehensive process ensures that organizations can seamlessly facilitate license renewals or issue new licenses, while adhering to regulatory standards. I am passionate about leveraging technology to empower professionals, enhance compliance workflows, and drive progress in these critical fields.
+    </p>
+  </section>
+  
+</body>
+</html>
